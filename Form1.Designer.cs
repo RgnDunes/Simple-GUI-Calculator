@@ -49,6 +49,7 @@
             this.button18 = new System.Windows.Forms.Button();
             this.result = new System.Windows.Forms.TextBox();
             this.label_current_operation = new System.Windows.Forms.Label();
+            this.button19 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -227,7 +228,7 @@
             this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button16.Location = new System.Drawing.Point(263, 218);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(70, 96);
+            this.button16.Size = new System.Drawing.Size(70, 45);
             this.button16.TabIndex = 16;
             this.button16.Text = "=";
             this.button16.UseVisualStyleBackColor = false;
@@ -279,11 +280,24 @@
             this.label_current_operation.TabIndex = 20;
             this.label_current_operation.Text = "_";
             // 
+            // button19
+            // 
+            this.button19.BackColor = System.Drawing.Color.Turquoise;
+            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button19.Location = new System.Drawing.Point(264, 269);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(69, 44);
+            this.button19.TabIndex = 21;
+            this.button19.Text = "%";
+            this.button19.UseVisualStyleBackColor = false;
+            this.button19.Click += new System.EventHandler(this.operation_clicked);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(368, 337);
+            this.ClientSize = new System.Drawing.Size(369, 346);
+            this.Controls.Add(this.button19);
             this.Controls.Add(this.label_current_operation);
             this.Controls.Add(this.result);
             this.Controls.Add(this.button18);
@@ -337,6 +351,7 @@
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.TextBox result;
         private System.Windows.Forms.Label label_current_operation;
+        private System.Windows.Forms.Button button19;
     }
 }
 

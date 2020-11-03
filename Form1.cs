@@ -72,7 +72,7 @@ namespace Calculator
 
         private void button16_Click(object sender, EventArgs e)
         {
-            switch(operation_performed)
+            switch (operation_performed)
             {
                 case "+":
                     result.Text = (result_value + Double.Parse(result.Text)).ToString();
@@ -86,11 +86,14 @@ namespace Calculator
                 case "/":
                     result.Text = (result_value / Double.Parse(result.Text)).ToString();
                     break;
+                case "%":
+                    result.Text = (result_value % Double.Parse(result.Text)).ToString();
+                    break;
                 default:
                     break;
             }
             result_value = Double.Parse(result.Text);
-            label_current_operation.Text=""; 
+            label_current_operation.Text = "";
         }
     }
 }
